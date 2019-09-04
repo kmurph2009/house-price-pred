@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>House Price Predictiont</title>
+</head>
+<body>
+   <h2>Predict house prices</h2> 
+
+   {%for message in get_flashed_messages() %}
+     <h3>{{message}}</h3>
+   {% endfor %}
+
+   <form action="" method="POST">
+
+        {{form.hidden_tag()}}
+
+        {{form.bedrooms.label() }}
+        {{form.bedrooms() }}
+
+        <br /><br />
+
+        {{form.bathrooms.label() }}
+        {{form.bathrooms() }}
+
+        <br /><br />
+
+        {{form.sqft_living.label() }}
+        {{form.sqft_living() }}
+
+        <br /><br />
+
+        {{form.sqft_lot.label() }}
+        {{form.sqft_lot() }}
+
+        <br /><br />
+
+        {{form.floors.label() }}
+        {{form.floors() }}
+
+        <br /><br />
+
+        {{form.sqft_above.label() }}
+        {{form.sqft_above() }}
+
+        <br /><br />
+
+        {{form.sqft_Lot15.label() }}
+        {{form.sqft_Lot15() }}
+
+        <br /><br />
+
+        {{form.yr_built.label() }}
+        {{form.yr_built() }}
+
+        <br /><br />
+
+        {{form.condition.label() }}
+        {{form.condition() }}
+
+        <br /><br />
+
+        {{form.zipcode.label() }}
+        {{form.zipcode() }}
+
+        <br /><br />
+        {{form.submit() }}
+
+
+     
+    </form>
+
+</body>
+</html>
