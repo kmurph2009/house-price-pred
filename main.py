@@ -4,7 +4,7 @@ from joblib import load
 
 app = Flask(__name__) 
 
-app.config['SECRET_KEY'] = '26402b8b36cb28dec9f785c14ca4984e'
+app.config['SECRET_KEY'] = '45619f8d5bc05b10a1e87f7091e315f3'
 @app.route('/',methods=['GET','POST'])
 def home():
     form = Prediction()
